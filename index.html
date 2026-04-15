@@ -20,6 +20,74 @@ body
 </style>
 <link href="Untitled1.css" rel="stylesheet">
 <style>
+#wb_LayoutGrid1
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   box-sizing: border-box;
+   margin: 0;
+}
+#LayoutGrid1
+{
+   box-sizing: border-box;
+   padding: 0px 15px 0px 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
+#LayoutGrid1 > .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#LayoutGrid1 > .row > .col-1
+{
+   box-sizing: border-box;
+   font-size: 0px;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#LayoutGrid1 > .row > .col-1
+{
+   float: left;
+}
+#LayoutGrid1 > .row > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 100%;
+   text-align: left;
+}
+#LayoutGrid1:before,
+#LayoutGrid1:after,
+#LayoutGrid1 .row:before,
+#LayoutGrid1 .row:after
+{
+   display: table;
+   content: " ";
+}
+#LayoutGrid1:after,
+#LayoutGrid1 .row:after
+{
+   clear: both;
+}
+@media (max-width: 480px)
+{
+#LayoutGrid1 > .row > .col-1
+{
+   float: none;
+   width: 100% !important;
+}
+}
 #wb_Extension1 *
 {
    box-sizing: border-box;
@@ -182,74 +250,6 @@ th
 .bi-trash::before { content: "\f5de"; }
 .bi-download::before { content: "\f30a"; }
 .bi-printer::before { content: "\f501"; }
-#wb_LayoutGrid1
-{
-   clear: both;
-   position: relative;
-   table-layout: fixed;
-   display: table;
-   text-align: center;
-   width: 100%;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #CCCCCC;
-   box-sizing: border-box;
-   margin: 0;
-}
-#LayoutGrid1
-{
-   box-sizing: border-box;
-   padding: 0px 15px 0px 15px;
-   margin-right: auto;
-   margin-left: auto;
-}
-#LayoutGrid1 > .row
-{
-   margin-right: -15px;
-   margin-left: -15px;
-}
-#LayoutGrid1 > .row > .col-1
-{
-   box-sizing: border-box;
-   font-size: 0px;
-   min-height: 1px;
-   padding-right: 15px;
-   padding-left: 15px;
-   position: relative;
-}
-#LayoutGrid1 > .row > .col-1
-{
-   float: left;
-}
-#LayoutGrid1 > .row > .col-1
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   width: 100%;
-   text-align: left;
-}
-#LayoutGrid1:before,
-#LayoutGrid1:after,
-#LayoutGrid1 .row:before,
-#LayoutGrid1 .row:after
-{
-   display: table;
-   content: " ";
-}
-#LayoutGrid1:after,
-#LayoutGrid1 .row:after
-{
-   clear: both;
-}
-@media (max-width: 480px)
-{
-#LayoutGrid1 > .row > .col-1
-{
-   float: none;
-   width: 100% !important;
-}
-}
 </style>
 <script src="jquery-1.12.4.min.js"></script>
 <script src="popper.min.js"></script>
@@ -293,13 +293,16 @@ $(document).ready(function()
 <div class="row">
 <div class="col-1">
 <div id="wb_Extension1" style="display:inline-block;width:100%;z-index:0;">
-<table data-classes="table table-bordered table-striped table-hover" data-sortable="true" data-show-columns="true" data-show-columns-toggle-all="true" data-search="true" data-buttons-align="right" data-search-align="left" data-mobile-responsive="true" data-min-width="562" data-pagination="true" data-page-size="20" data-page-list="[10, 25, 50, 100, 200, All]" data-pagination-parts="[pageInfo,pageSize,pageList]" data-pagination-pre-text="Previous" data-pagination-next-text="Next" id="Extension1">
+<table data-classes="table table-bordered table-striped table-hover" data-search="true" data-buttons-align="right" data-search-align="right" data-mobile-responsive="true" data-min-width="200" data-pagination="true" data-page-size="20" data-page-list="[10, 25, 50, 100, 200, All]" data-pagination-parts="[pageSize,pageList]" data-pagination-pre-text="Previous" data-pagination-next-text="Next" id="Extension1">
 <thead>
    <tr>
-      <th data-sortable="true">,DATA PPPK 2024 KEMENAG KABUPATEN SERANG,,,</th>
+      <th></th>
    </tr>
 </thead>
 <tbody>
+   <tr>
+      <td>,DATA PPPK 2024 KEMENAG KABUPATEN SERANG,,,</td>
+   </tr>
    <tr>
       <td>NO,NIP,NAMA ,JABATAN,UNIT KERJA</td>
    </tr>
